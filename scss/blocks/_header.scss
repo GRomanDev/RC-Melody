@@ -23,13 +23,18 @@
     max-width: 671px;
     &__item:not(:last-child) {      
       margin-right: 80px;
-
     }
     &__links {
+      display: inline-block;
       text-decoration: none;
       color: inherit;
       font-size: 16px;
       line-height: 19px;
+      transition: all .2s;
+      &:hover {
+        color: #3596F5;
+        transform: scale(1.1);
+      }
     }
   }
   &-contacts {
@@ -47,6 +52,10 @@
       line-height: 20px;
       text-decoration: none;
       color: inherit;
+      transition: .2s;
+      &:hover {
+        color: #3596F5;
+      }
     }
   }
 }
